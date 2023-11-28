@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="task_style.css">
+</head>
+<body>
+
+<!-- <div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div> -->
+
+<div class="container " id="container">
+    <div class="header" id="header">
+        <h2>Add new to-do task</h2>
+        <div class="input-group">
+            <input type="text" required>
+            <label for="text">Task</label>
+        </div>
+        <div class="input-group">
+            <input type="text" required>
+            <label for="text">Task Description</label>
+        </div>
+            <a href="#"><span>Add</span></a>
+    </div>
+    <main class="table" id="table">
+        <section class="table_header">
+            <h2>My to-do tasks</h2>
+            <div class="nav-links">
+                <ul>
+                    <li class="one" id="list-btn"><a href="">all tasks</a></li>
+                    <li class="two" id="add-task"><a href="">add task</a></li>
+                <hr/>
+                </ul>
+            </div>
+        </section>
+        <section class="table_body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Task name</th>
+                        <th>Task Description</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>234</td>
+                        <td>Hit to the Gym</td>
+                        <td>For 2hrs cadio and leg workout</td>
+                        <td>pending</td>
+                    </tr>
+                    <tr>
+                        <td>235</td>
+                        <td>Submit Assignment</td>
+                        <td> 2hrs Authenticate User</td>
+                        <td>pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
